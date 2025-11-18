@@ -1,7 +1,7 @@
-#﻿# Time-Mapping-Software
+## Time-Mapping-Software
 
 In the present world, servicing of vehicles in automotive workshop takes more time due
-to unnecessary idle time. Customers are the God of any industry but delay in getting
+to unnecessary idle time. Customers are the main priority of any industry but delay in getting
 vehicles which may lead to decrease in productivity in service makes a bad impression
 to the customers. A preliminary literature survey has been conducted in the domain at
 various topics like improvement of productivity in automotive sector, Work and time study,
@@ -21,3 +21,4 @@ out whether the service took excess time or not. The QR code is supposed to be p
 from the entry. The time is mapped on an excel sheet so that the management can directly
 monitor and find out the time lag during the service when the QR code is scanned.So the
 conclusion is that this could be a huge enhancer in the automobile industries.
+
