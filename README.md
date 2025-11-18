@@ -22,3 +22,30 @@ from the entry. The time is mapped on an excel sheet so that the management can 
 monitor and find out the time lag during the service when the QR code is scanned.So the
 conclusion is that this could be a huge enhancer in the automobile industries.
 
+
+Time-Mapping-Software-Application is designed for a Renault service center to track vehicles and manage jobs throughout their service lifecycle.
+The core features include:
+
+Registration of jobs for incoming vehicles
+Tracking job status, entry, and exit times using QR codes
+Staff and vehicle management
+Web dashboards and mobile interfaces for staff usage
+The goal is to time-map every vehicle’s service progress using QR codes for digital entry/exit and tracking, increasing transparency and efficiency at the service center.
+
+Use of Python
+Python is primarily used for:
+
+Backend server: The core backend is built using Django (a Python web framework).
+API endpoints and business logic: Handles requests from web/mobile clients for job registration, searching, status tracking, and reporting.
+Example: views.py defines functions for job management, QR code generation, staff handling, entry/exit logging, etc.
+QR code generation: Uses Python’s qrcode library to generate QR images, which are then linked to vehicle/job records.
+Example: The generate_qr_code view creates and saves QR codes linked with vehicle/job data.
+Database storage and queries: Manages persistent storage of vehicles, jobs, staff data (using Django ORM).
+Use of Java
+Java is mainly used for:
+
+Android mobile application: Java files such as main_activity.java, generateqrcode_activity.java, and qr_scanner_activity.java implement the mobile interface for staff.
+QR code actions on mobile: Java is used for scanning and handling QR codes using libraries like ZXing and MLKit, enabling job entry/exit by scanning vehicle QR codes.
+Client-server communication: Android app sends/receives HTTP requests to/from the Django server, such as requesting QR code generation or updating job status.
+
+
